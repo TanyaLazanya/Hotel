@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Столичный дворик</title>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Spartan:400,500,600,700&display=swap'>
+	<link rel='stylesheet' href='./bootstrap/css/bootstrap.min.css'>
+
+	<!-- <style>
+		.preloader {
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  z-index: 9999;
+		  background-color: #fefefe;
+		}
+	</style> -->
+
+	<link rel='stylesheet' href='./css/main.css' type="text/css" />
+	<link rel='stylesheet' href='./css/baguetteBox.min.css'>
+	<link rel='stylesheet' href='./css/animate.css'>
+	<link rel='stylesheet' href='./css/owl.carousel.min.css'>
+	<link rel='stylesheet' href='./css/owl.theme.default.min.css'>
+
+</head>
+
+<body>
+
+		<!-- <div class="preloader d-flex justify-content-center align-items-center">
+			<div class="spinner-border text-warning" style="width: 10rem; height: 10rem;" role="status">
+				<span class="sr-only">Loading...</span>
+			</div>
+		</div>
+
+		<button class="scrollToTop"><i>&#708;</i></button> -->
+	
+		<header class="header">
+
+			<nav class="navbar navbar-expand-lg navbar-dark header-nav fixed-top">
+				<a class="navbar-brand header-logo text-center" href="index.html">
+					Столичный<br>
+					<img src="./img/yin-yang.png" alt=""><br>Дворик
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				  <ul class="navbar-nav ml-auto header-menu">
+				  
+					<!-- <li class="nav-item header-menu-item">
+					  <a class="nav-link header-menu-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+					</li> -->
+					
+					<li class="nav-item dropdown">
+					  <a class="nav-link dropdown-toggle" href="#rooms" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Номера
+					  </a>
+					  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="./bruklin.html">Бруклин</a>
+						<a class="dropdown-item" href="./paris.html">Париж</a>
+						<a class="dropdown-item" href="./hostel.html">Хостел</a>
+					  </div>
+					</li>
+					
+					<li class="nav-item dropdown">
+					  <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Услуги
+					  </a>
+					  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+						<a class="dropdown-item" href="./dbath.html">Деревенская баня</a>
+						<a class="dropdown-item" href="./cbath.html">Царская баня</a>
+						<a class="dropdown-item" href="./rest.html">Банкетный зал</a>
+					  </div>
+					</li>
+					
+					<li class="nav-item">
+					  <a class="nav-link" href="about-us.html">О нас</a>
+					</li>
+					
+					<li class="nav-item">
+					  <a class="nav-link" href="news.html">Новости</a>
+					</li>
+					
+					<li class="nav-item">
+					  <a class="nav-link" href="contact.html">Контакты</a>
+					</li>
+	
+					<li class="nav-item">
+						<a class="nav-link header-contact" href="#">8 (800) 000 00 00</a>
+					</li>
+				  </ul>
+				</div>
+			</nav>
+		</header>
+		
+		<section class="banner">
+			<div class="contaiber">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h1 class="banner-title wow fadeIn">Добро пожаловать в<br> «Столичный дворик»</h1>
+					</div>
+				</div>
+					<form action="" class="search-room-form text-left row"> 
+						<div class="col search-room">
+							<label class="form-name" for="date-to">Дата заезда</label>
+							<input type="date" class="form-control" id="date-to" name="date" placeholder="Дата заезда" required>
+						</div>
+						<div class="col search-room">
+							<label class="form-name" for="date-in">Дата выезда</label>
+							<input type="date" class="form-control" id="date-in" name="date" placeholder="Дата выезда" required>
+						</div>
+						<div class="col search-room">
+							<label class="form-name" for="adult">Взрослых</label>
+							<select class="custom-select ccustom-select-sm" id="adult">
+								<option selected>-</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="5">6</option>
+							</select>
+						</div>
+						<div class="col search-room">
+							<label class="form-name" for="child">Детей</label>
+							<select class="custom-select ccustom-select-sm" id="child">
+								<option selected>-</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="5">6</option>
+							</select>
+						</div>
+						<div class="col search-room">
+							<button type="button" class="btn-home banner-btn-home btn btn-light">Подобрать номер</button>
+						</div>
+					</form>
+			</div>
+		</section>
+
+		<section class="info">
+			<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center wow zoomIn" data-wow-duration="1s">
+							<h2 class="info-title">Вам здесь понравится</h2>
+						</div>
+						<div class="row wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s" data-wow-offset="100">
+							<div class="col-md-12">
+								<p>На живописном берегу реки Кубань в тихом месте расположился гостинично-банный комплекс «Столичный дворик». Станица Троицкая под Славянском — разумный выбор для гостей Славянска, которые хотят получить больше эстетического удовольствия вне города. Гостиницы Славянска-на-Кубани не могут предложить такое сочетание услуг и качества: рыбалку на Кубани, отдых в номерах или хостеле, снять баню, арендовать банкетный зал.</p>
+								<p>Жить в «Столичном дворике» — значит жить на равном удалении от Черного и Азовского морей. Всего через час вы будете на пляже Анапы или Темрюка. Если планы изменились — через час вы в Краснодаре или Новороссийске ищите более изощренные развлечения. Для автомобилей доступна парковка, также до Славянска ходят автобусы.</p>
+							</div>
+							<!-- <div class="col-md-5 embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+							</div> -->
+						</div>
+					</div>
+			</div>
+			
+		</section>
+
+		<section class="features text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 wow zoomIn" data-wow-duration="1s">
+						<h2>Наши характеристики</h2>
+					</div>
+					<div class="features-item col-md-3 wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+						<div class="features-img">
+							<img class="features-svg" src="./img/fence.png" alt="">
+							<!-- <svg class="features-svg">
+								<use xlink:href="img/symbol/sprite.svg#hanger"></use>
+							</svg> -->
+						</div>
+						<h4>Огороженная территория</h4>
+						<!-- <p>Небольшое описание характеристики, буквально в двух словах</p> -->
+					</div>
+					<div class="features-item col-md-3 wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">
+						<div class="features-img">
+							<img class="features-svg" src="./img/livingroom.png" alt="">
+							<!-- <svg class="features-svg">
+								<use xlink:href="img/symbol/sprite.svg#no-smoking"></use>
+							</svg> -->
+						</div>
+						<h4>Достойный интерьер</h4>
+						<!-- <p>Небольшое описание характеристики, буквально в двух словах</p> -->
+					</div>
+					<div class="features-item col-md-3 wow fadeIn" data-wow-duration="1s" data-wow-delay=".9s">
+						<div class="features-img">
+							<img class="features-svg" src="./img/windows.png" alt="">
+							<!-- <svg class="features-svg">
+								<use xlink:href="img/symbol/sprite.svg#bedroom"></use>
+							</svg> -->
+						</div>
+						<h4>Просторные номера с видом на речку</h4>
+						<!-- <p>Небольшое описание характеристики, буквально в двух словах</p> -->
+					</div>
+					<div class="features-item col-md-3 wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
+						<div class="features-img">
+							<img class="features-svg" src="./img/support.png" alt="">
+							<!-- <svg class="features-svg">
+								<use xlink:href="img/symbol/sprite.svg#towel"></use>
+							</svg> -->
+						</div>
+						<h4>Адекватный персонал</h4>
+						<!-- <p>Небольшое описание характеристики, буквально в двух словах</p> -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="rooms" id="rooms">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center wow fadeIn" data-wow-duration="1s">
+						<h2>Номера</h2>
+					</div>
+					<div class="rooms-left row wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s" data-wow-offset="70">
+						<div class="col-lg-6 order-lg-2 mt-5 rooms-info-left">
+							<h3><a href="./bruklin.html">Бруклин</a></h3>
+							<p>Премиум-номер в стиле апартаментов боро Нью-Йорка. Лофт в приглушенных тонах с аллюзией на не стесняющую движения студию.</p>
+							<p>Жилая зона делится на гостиную и спальню, а в туалетной комнате вас ждет джакузи!</p>
+							<!-- <button type="button" class="btn btn-home rooms-btn-home">ЗАБРОНИРОВАТЬ</button> -->
+							<a href="./bruklin.html" class="btn btn-home rooms-btn-home">ПОДРОБНЕЕ</a>
+							<!-- <button type="button" class="btn btn-home rooms-btn-home">ПОДРОБНЕЕ</button> -->
+						</div>
+						<div class="col-lg-6 order-lg-1 rooms-img-left">
+							<a href="./bruklin.html"><img src="./img/bruklin2.jpg" alt=""></a>
+						</div>
+					</div>
+					<div class="rooms-right row wow fadeIn"  data-wow-duration="1s" data-wow-delay=".3s" data-wow-offset="70">
+						<div class="col-lg-6 mt-5 rooms-info-right">
+							<h3><a href="./paris.html">Париж</a></h3>
+							<p>Этот vip-номер предпочитают молодожены. Светлый рококо контрастирует с современным лофтом Франции, напоминая об эклектичности европейской культуры.</p>
+							<p>Расположение помещений аналогично Бруклину, ведь эти номера расположены по соседству — в какой сами заселитесь, а в каком разместите друзей?</p>
+							<!-- <button type="button" class="btn btn-home rooms-btn-home">ЗАБРОНИРОВАТЬ</button> -->
+							<a href="./paris.html" class="btn btn-home rooms-btn-home">ПОДРОБНЕЕ</a>
+							<!-- <button type="button" class="btn btn-home rooms-btn-home">ПОДРОБНЕЕ</button> -->
+						</div>
+						<div class="col-lg-6 rooms-img-right">
+							<a href="./paris.html"><img src="./img/paris4.jpg" alt=""></a>
+						</div>
+					</div>
+					<div class="rooms-left row wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s" data-wow-offset="70">
+						<div class="col-lg-6 order-lg-2 mt-5 rooms-info-left">
+							<h3><a href="./hostel.html">Хостел</a></h3>
+							<p>Устали в дороге между Крымском и Славянском? Остановитесь в нашем хостеле, здесь вас еще и накормят.</p>
+							<!-- <button type="button" class="btn btn-home rooms-btn-home">ЗАБРОНИРОВАТЬ</button> -->
+							<a href="./hostel.html" class="btn btn-home rooms-btn-home">ПОДРОБНЕЕ</a>
+							<!-- <button type="button" class="btn btn-home rooms-btn-home">ПОДРОБНЕЕ</button> -->
+						</div>
+						<div class="col-lg-6 order-lg-1 rooms-img-left">
+							<a href="./hostel.html"><img src="./img/restaurant1.jpg" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="gallery-block text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 wow zoomIn" data-wow-duration="1s">
+						<h2>Галерея</h2>
+					</div>
+					<div class="gallery row wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+						<div class="col-md-4 gallery-item">
+							<a href="./img/gallery/image1.jpg">
+								<img src="./img/gallery/image1_s.jpg" alt="">
+							</a>
+						</div>
+						<div class="col-md-4 gallery-item">
+							<a href="./img/gallery/image7.jpg">
+								<img src="./img/gallery/image7_s.jpg" alt="">
+							</a>
+						</div>
+						<div class="col-md-4 gallery-item">
+							<a href="./img/gallery/image3.jpg">
+								<img src="./img/gallery/image3_s.jpg" alt="">
+							</a>
+						</div>
+						<div class="col-md-4 gallery-item">
+							<a href="./img/gallery/image5.jpg">
+								<img src="./img/gallery/image5_s.jpg" alt="">
+							</a>
+						</div>
+						<div class="col-md-4 gallery-item">
+							<a href="./img/gallery/image4.jpg">
+								<img src="./img/gallery/image4_s.jpg" alt="">
+							</a>
+						</div>
+						<div class="col-md-4 gallery-item">
+							<a href="./img/gallery/image6.jpg">
+								<img src="./img/gallery/image6_s.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="services" id="services">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center wow zoomIn" data-wow-duration="1s">
+						<h2>Услуги</h2>
+					</div>
+					<div class="services-right row wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s" data-wow-offset="70">
+						<div class="col-lg-6 mt-5 services-info-right">
+							<h3><a href="./dbath.html">Деревенская баня</a></h3>
+							<p></p>Парьтесь так, как вы привыкли. Прибавьте пару, облив камни водичкой. На верхней полке будет жарче, уж поверьте. Здесь темно от жары и пахнет деревом.</p>
+							<!-- <button type="button" class="btn btn-home services-btn-home">ЗАБРОНИРОВАТЬ</button> -->
+							<a href="./dbath.html" class="btn btn-home services-btn-home">ПОДРОБНЕЕ</a>
+							<!-- <button type="button" class="btn btn-home services-btn-home">ПОДРОБНЕЕ</button> -->
+						</div>
+						<div class="col-lg-6 services-img-right">
+							<a href="./dbath.html"><img src="./img/countrybath3.jpg" alt=""></a>
+						</div>
+					</div>
+					<div class="services-left row wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s" data-wow-offset="70">
+						<div class="col-lg-6 order-lg-2 mt-5 services-info-left">
+							<h3><a href="./cbath.html">Царская баня</a></h3>
+							<p>Для тех, кому нравится хамам. Чем больше пара — тем лучше! Да еще и под музыку. А после хамама погрузитесь в прохладный бассейн или же просто пройдите в комнату отдыха, пока на заднем дворе готовятся шашлыки.</p>
+							<!-- <button type="button" class="btn btn-home services-btn-home">ЗАБРОНИРОВАТЬ</button> -->
+							<a href="./cbath.html" class="btn btn-home services-btn-home">ПОДРОБНЕЕ</a>
+							<!-- <button type="button" class="btn btn-home services-btn-home">ПОДРОБНЕЕ</button> -->
+						</div>
+						<div class="col-lg-6 order-lg-1 services-img-left">
+							<a href="./cbath.html"><img src="./img/royalbath3.jpg" alt=""></a>
+						</div>
+					</div>
+					<div class="services-right row wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s" data-wow-offset="70">
+						<div class="col-lg-6 mt-5 services-info-right">
+							<h3><a href="./rest.html">Банкетный зал</a></h3>
+							<p>Его хватит на 30 персон. Можно шуметь, прыгать, петь песни допоздна — преимущество вечеринок в отдельном доме. В наличии проектор, бар, возможность двигать столы и стулья. Можно поиграться со светом на танцполе, заставить крутиться диско-шар и покурить на балконе, если сильно вымотались.</p>
+							<!-- <button type="button" class="btn btn-home services-btn-home">ЗАБРОНИРОВАТЬ</button> -->
+							<a href="./rest.html" class="btn btn-home services-btn-home">ПОДРОБНЕЕ</a>
+							<!-- <button type="button" class="btn btn-home services-btn-home">ПОДРОБНЕЕ</button> -->
+						</div>
+						<div class="col-lg-6 services-img-right">
+							<a href="./rest.html"><img src="./img/restaurant8.jpg" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="reviews text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 wow zoomIn" data-wow-duration="1s">
+						<h2>Отзывы клиентов</h2>
+					</div>
+					
+						<div class="reviews-carousel carousel owl-carousel owl-theme wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+							<div class="reviews-carousel-item carousel-item">
+								<img class="reviews-carousel-img" src="./img/Client.jpg" alt="">
+								<blockquote class="blockquote text-center">
+									<p class="mb-0">Отзыв клиента первого. хороший. о сауне, о проживании в номере.</p>
+									<footer class="blockquote-footer">Кто-то знаменитый в <cite title="Название источника">Клиент 1</cite></footer>
+								</blockquote>
+							</div>
+							<div class="reviews-carousel-item carousel-item">
+								<img class="reviews-carousel-img" src="./img/Client.jpg" alt="">
+								<blockquote class="blockquote text-center">
+									<p class="mb-0">Отзыв клиента первого. хороший. о сауне, о проживании в номере.</p>
+									<footer class="blockquote-footer">Кто-то знаменитый в <cite title="Название источника">Клиент 2</cite></footer>
+								</blockquote>
+							</div>
+							<div class="reviews-carousel-item carousel-item">
+								<img class="reviews-carousel-img" src="./img/Client.jpg" alt="">
+								<blockquote class="blockquote text-center">
+									<p class="mb-0">Отзыв клиента первого. хороший. о сауне, о проживании в номере.</p>
+									<footer class="blockquote-footer">Кто-то знаменитый в <cite title="Название источника">Клиент 3</cite></footer>
+								</blockquote>
+							</div>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center wow zoomIn" data-wow-duration="1s">
+						<h2>Есть вопросы? Пишите!</h2>
+					</div>
+					<div class="row wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s" data-wow-offset="70">
+						<div class="col-md-6">
+							<img src="./img/contact.jpg" alt="">
+						</div>
+						<div class="col-md-6">
+							<form class="contact-form">
+								<div class="form-group row">
+								  <div class="col">
+									<input type="text" class="form-control" placeholder="Имя">
+								  </div>
+								  <div class="col">
+									<input type="text" class="form-control" placeholder="Фамилия">
+								  </div>
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-12">
+									  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-12">
+									  <input type="tel" class="form-control" id="inputTel" placeholder="Телефон">
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-12">
+										<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Текст сообщения"></textarea>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<button type="submit" class="btn btn-home">Отправить</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="map text-center">
+			<div class="container map-wrap">
+				<div class="row">
+					<div class="col-md-12 wow zoomIn" data-wow-duration="1s">
+						<h2>Где нас найти</h2>
+					</div>
+					<div class="map-picture col-md-12">
+						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac3b83f5101be2e23be5ed0d94f94f1f6d6c153b618a5aea3b424716e7ba47f55&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 order-md-1 col-6">
+						<ul class="navbar-nav footer-menu">
+				  
+							<li class="nav-item footer-menu-item">
+							  <a class="nav-link footer-menu-link" href="index.html">Главная</a>
+							</li>
+							
+							<li class="nav-item footer-menu-item">
+							  <a class="nav-link footer-menu-link" href="#rooms">Номера</a>
+							</li>
+							
+							<li class="nav-item footer-menu-item">
+							  <a class="nav-link footer-menu-link" href="#services">Услуги</a>
+							</li>
+							
+							<li class="nav-item footer-menu-item">
+							  <a class="nav-link footer-menu-link" href="./about-us.html">О нас</a>
+							</li>
+							
+							<li class="nav-item footer-menu-item">
+							  <a class="nav-link footer-menu-link" href="./news.html">Новости</a>
+							</li>
+							
+							<li class="nav-item footer-menu-item">
+							  <a class="nav-link footer-menu-link" href="./contact.html">Контакты</a>
+							</li>
+						  </ul>
+					</div>
+					<div class="col-md-3 order-md-4 col-6">
+						<ul class="navbar-nav footer-menu">
+							<li class="nav-item footer-menu-item footer-menu-contact">
+								<span> <img class="mr-2" src="./img/pin.png" alt=""> Адрес:</span>
+								<p>Краснодарский край, станица Троицкая, улица Ленина, 2А</p>
+							</li>
+							
+							<!-- <li class="nav-item footer-menu-item footer-menu-contact">
+								<span> <img class="mr-2" src="./img/phone-call.png" alt=""> Телефон:</span>
+								<p>8 (000) 000 00 00</p>
+							</li> -->
+		
+							<li class="nav-item footer-menu-item footer-menu-contact">
+								<span> <img class="mr-2" src="./img/email.png" alt=""> Email:</span>
+								<a class="nav-link footer-menu-link" href="#">Email adress</a>
+							</li>
+		
+							<li class="nav-item footer-menu-item">
+								<a class="nav-link footer-menu-link--icon" href="#">
+									<img src="./img/vk.png" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3 order-md-3 col-6">
+						<ul class="navbar-nav footer-menu">
+							<li class="nav-item footer-menu-item">
+							<a class="nav-link footer-menu-link-sub" href="#services">Услуги</a>
+							</li>
+							<li class="nav-item footer-menu-item">
+								<a class="nav-link footer-menu-link" href="./dbath.html">Деревенская баня</a>
+							</li>
+							<li class="nav-item footer-menu-item">
+								<a class="nav-link footer-menu-link" href="./cbath.html">Царская баня</a>
+							</li>
+							<li class="nav-item footer-menu-item">
+								<a class="nav-link footer-menu-link" href="./rest.html">Банкетный зал</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3 order-md-2 col-6">
+						<ul class="navbar-nav footer-menu">
+							<li class="nav-item footer-menu-item">
+							<a class="nav-link footer-menu-link footer-menu-link-sub" href="#rooms">Номера</a>
+							</li>
+							<li class="nav-item footer-menu-item">
+								<a class="nav-link footer-menu-link" href="./bruklin.html">Бруклин</a>
+							</li>
+							<li class="nav-item footer-menu-item">
+								<a class="nav-link footer-menu-link" href="./paris.html">Париж</a>
+							</li>
+							<li class="nav-item footer-menu-item">
+								<a class="nav-link footer-menu-link" href="./hostel.html">Хостел</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p class="footer-copy">&copy; 2020 - Столичный Дворик</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+<script src='./js/jquery-3.4.1.min.js'></script>
+<script src='./js/popper.min.js'></script>
+<script src='./bootstrap/js/bootstrap.min.js'></script>
+<script src='./js/script.js'></script>
+<script src='./js/baguetteBox.min.js'></script>
+<script src='./js/wow.min.js'></script>
+<script src='./js/owl.carousel.js'></script>
+
+</body>
+</html>
